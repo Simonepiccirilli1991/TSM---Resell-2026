@@ -23,6 +23,6 @@ public class PkmController {
 
     @PostMapping("add/sealed")
     public ResponseEntity<AddPkmReponse> addPokemonSealed(@RequestBody AddPkmSealedRequest request){
-
+        return ResponseEntity.ok(addPkmSealedService.addPkmSealedService(request));
     }
 }
